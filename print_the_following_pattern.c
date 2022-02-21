@@ -3,18 +3,11 @@ int main()
 {
     int n,v,k;
     scanf("%d",&n);
-    for(v=1;v<=n;v++)
+    for(v=n;v>=1;v--)
     {
-        for(k=1;k<=n;k++)
+        for(k=v;k>=1;k--)
         {
-            if(v==k)
-            {
-                printf("0");
-            }
-            else
-            {
-                printf("x");
-            }
+            printf("%c ",v+64);
         }
         printf("
 ");
