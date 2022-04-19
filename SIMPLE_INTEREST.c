@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int p,t,r,a;
+    int p,t,r,k;
     scanf("%d %d %d",&p,&t,&r);
-    a=p*t*r/100;
-    printf("%d",a);
+    k=p*t*r/100;
+    printf("%d",k);
     return 0;
 }
