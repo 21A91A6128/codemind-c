@@ -1,17 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,s=0,t;
-    scanf("%d",&n);
-    t=n;
-    for(i=1;i<n;i++)
+    int v,k,r=0;
+    scanf("%d",&v);
+    for(k=1;k<v;k++)
     {
-        if(n%i==0)
+        if(v%k==0)
         {
-            s=s+i;
+            r=r+k;
         }
     }
-    if(t==s)
+    if(r==v)
     {
         printf("True");
     }
