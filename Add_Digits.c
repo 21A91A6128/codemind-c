@@ -1,19 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int k=0,n,r;
-    scanf("%d",&n);
-    while(n)
+    int r,k,v=0;
+    scanf("%d",&r);
+    while(r>0)
     {
-        r=n%10;
-        k=k+r;
-        n=n/10;
-        if(n==0 && k>9)
+        k=r%10;
+        v+=k;
+        r=r/10;
+        if(v>=9 && r==0)
         {
-            n=k;
-            k=0;
+            r=v;
+            v=0;
         }
     }
-    printf("%d",k);
+    printf("%d",v);
     return 0;
 }
