@@ -1,17 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int v,k,r,l,n;
+    int n,i,j,k,l;
     scanf("%d",&n);
-    for(v=1;v<n+1;v++)
+    for(i=1;i<=n;i++)
     {
-        for(k=1;k<n-v+1;k++)
+        for(j=n;j>i;j--)
         {
             printf(" ");
         }
-        for(r=1;r<2*v;r++)
+        for(k=i;k>0;k--)
         {
-            printf("%d",v);
+            printf("%d",k-1);
+        }
+        for(l=1;l<i;l++)
+        {
+            printf("%d",l);
         }
         printf("
 ");
