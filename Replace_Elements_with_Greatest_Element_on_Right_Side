@@ -1,0 +1,21 @@
+#include<stdio.h>
+int max(int *vk,int s,int n){
+    int m=vk[s],i;
+    for(i=s;i<n;i++){
+        if(m<vk[i]){
+            m=vk[i];
+        }
+    }
+    return m;
+}
+int main(){
+    int n,v[2004],k;
+    scanf("%d",&n);
+    for(k=0;k<n;k++){
+        scanf("%d",&v[k]);
+    }
+    for(k=0;k<n-1;k++){
+        printf("%d ",max(v,k+1,n));
+    }
+    printf("%d",-1);
+}
