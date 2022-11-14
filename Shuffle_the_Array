@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int n,arr[2004],vk[2004],r,i,j=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&r);
+    for(i=0;i<r;i++){
+        vk[j++]=arr[i];
+        vk[j++]=arr[r+i];
+    }
+    for(i=0;i<n;i++){
+        printf("%d ",vk[i]);
+    }
+}
